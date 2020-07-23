@@ -1,0 +1,66 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "nyt-franklin", "Helvetica Neue", garamond, helvetica, sans serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 12px 20px;
+  font-size: 21px;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(255, 255, 255, 0);
+  color: #757575;
+  font-weight: 300;
+  font-family: "nyt-karnak-display-130124", "Helvetica Neue", garamond,
+    helvetica, sans serif;
+  width: 100%;
+  z-index: 10;
+}
+#board {
+  margin: 0;
+  padding: 0;
+  word-spacing: 0;
+  width: 100%;
+}
+.row {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+}
+.square {
+  padding: 0;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background: #ffffff;
+}
+.alive {
+  background-color: #c8e6c9;
+}
+#refresh {
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  font-weight: 700;
+}
+#refresh:hover,
+#nav a:hover {
+  color: #ef6c00;
+}
