@@ -14,9 +14,11 @@ function setupBoard() {
   let html = "";
   for (i = 0; i < sets; i++) {
     html += `<div class="set">`;
+    html += `<input type="text" class="set_text"/>`;
     for (j = 0; j < dicePerSet; j++) {
       html += `<div class="die">1</div>`;
     }
+    html += `= <div class="set_total">2</div>`;
     html += `</div>`;
   }
   $("#board").html(html);
