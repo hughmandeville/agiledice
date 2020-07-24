@@ -17,7 +17,7 @@ function setupBoard() {
     for (j = 0; j < dicePerSet; j++) {
       html += `<div class="die">1</div>`;
     }
-    html += `= <div class="set_total">2</div>`;
+    html += `&nbsp; = <div class="set_total">2</div>`;
     html += `</div>`;
   }
   $("#board").html(html);
