@@ -9,7 +9,6 @@ $(function () {
 });
 
 function setupBoard() {
-  console.log("in setupBoard");
   $("#board").empty();
   let html = "";
   for (i = 0; i < sets; i++) {
@@ -27,5 +26,15 @@ function setupBoard() {
 function rollDice() {
   $(".die").each(function (i) {
     $(this).text(Math.floor(Math.random() * Math.floor(sides)) + 1);
+  });
+  let total = 0;
+  $(".set").each(function (i) {
+    let total = 0;
+    $(this)
+      .find(".die")
+      .each(function (j) {
+        total += parseInt($(this).text());
+      });
+    $(this).find(".set_total").html(total);
   });
 }
