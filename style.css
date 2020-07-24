@@ -40,6 +40,19 @@ a {
   font-size: 32px;
 }
 
+#board .set:nth-child(1) {
+  background: #fff9c4;
+}
+#board .set:nth-child(2) {
+  background: #b3e5fc;
+}
+#board .set:nth-child(3) {
+  background: #a5d6a7;
+}
+#board .set:nth-child(4) {
+  background: #fce4ec;
+}
+
 .die,
 .set_total {
   width: 80px;
@@ -55,8 +68,7 @@ a {
   margin: 10px;
   border: 1px solid #9e9e9e;
 }
-.die {
-}
+
 .set_text {
   margin-right: 40px;
   font-size: 24px;
