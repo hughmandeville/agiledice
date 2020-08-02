@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-color: #f4f4f4;
+  font-family: "nyt-franklin", "Helvetica Neue", garamond, helvetica, sans serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 12px 20px;
+  font-size: 21px;
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(255, 255, 255, 0);
+  color: #757575;
+  font-weight: 700;
+  font-family: "Helvetica Neue", garamond, helvetica, sans serif;
+  z-index: 10;
+}
+#board {
+  margin: 60px 0 20px 0;
+}
