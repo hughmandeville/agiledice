@@ -6,7 +6,12 @@ help:
 	@sed -n 's/^##//p' ${MAKEFILE_LIST} | column -t -s ':' |  sed -e 's/^/ /'
 	@echo
 
-.PHONY: npm-start
-## npm-start: start app
-npm-start:
+.PHONY: build
+## build: build app distrubtion
+build:
+	npm run build
+
+.PHONY: run
+## run: start app
+run:
 	npm start
