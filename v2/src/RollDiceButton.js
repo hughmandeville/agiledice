@@ -1,9 +1,11 @@
 import React from "react";
 import "./RollDiceButton.css";
 
-const sides = 6; // number of sides to the dice
+const numRows = 4; // number of rows
+const numDice = 2; // number of dice per row
+const numSides = 6; // number of sides on the dice
 
-function RollDiceButton({ setDiceRows }) {
+export function RollDiceButton({ setDiceRows }) {
   return (
     <input
       type="button"
@@ -14,15 +16,17 @@ function RollDiceButton({ setDiceRows }) {
   );
 }
 function RollDice(setDiceRows) {
+  setDiceRows(GetDiceValues);
+}
+
+export function GetDiceValues() {
   let rolledDice = [];
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < numRows; i++) {
     let row = [];
-    for (let j = 0; j < 2; j++) {
-      row[j] = Math.floor(Math.random() * sides) + 1;
+    for (let j = 0; j < numDice; j++) {
+      row[j] = Math.floor(Math.random() * numSides) + 1;
     }
     rolledDice[i] = row;
   }
-  setDiceRows(rolledDice);
+  return rolledDice;
 }
-
-export default RollDiceButton;
