@@ -1,22 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import DiceRow from "./DiceRow";
+import DiceRows from "./DiceRows";
 import * as serviceWorker from "./serviceWorker";
-
-// die values
-const diceRows = [
-  [1, 1],
-  [2, 2],
-  [3, 3],
-  [4, 4],
-];
 
 ReactDOM.render(
   <React.StrictMode>
-    {diceRows.map((n, i) => (
-      <DiceRow id={i} row={n} key={"row-" + i} />
-    ))}
+    <DiceRows />
   </React.StrictMode>,
   document.getElementById("board")
 );
