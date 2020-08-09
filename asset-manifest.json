@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/agiledice/static/css/main.74d51593.chunk.css",
+    "main.js": "/agiledice/static/js/main.3dc31b45.chunk.js",
+    "main.js.map": "/agiledice/static/js/main.3dc31b45.chunk.js.map",
+    "runtime-main.js": "/agiledice/static/js/runtime-main.3fd09ce8.js",
+    "runtime-main.js.map": "/agiledice/static/js/runtime-main.3fd09ce8.js.map",
+    "static/js/2.66e98397.chunk.js": "/agiledice/static/js/2.66e98397.chunk.js",
+    "static/js/2.66e98397.chunk.js.map": "/agiledice/static/js/2.66e98397.chunk.js.map",
+    "index.html": "/agiledice/index.html",
+    "precache-manifest.eae19d87dc07341a88581f1ba99d7fd8.js": "/agiledice/precache-manifest.eae19d87dc07341a88581f1ba99d7fd8.js",
+    "service-worker.js": "/agiledice/service-worker.js",
+    "static/css/main.74d51593.chunk.css.map": "/agiledice/static/css/main.74d51593.chunk.css.map",
+    "static/js/2.66e98397.chunk.js.LICENSE.txt": "/agiledice/static/js/2.66e98397.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3fd09ce8.js",
+    "static/js/2.66e98397.chunk.js",
+    "static/css/main.74d51593.chunk.css",
+    "static/js/main.3dc31b45.chunk.js"
+  ]
+}
