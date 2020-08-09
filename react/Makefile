@@ -11,7 +11,18 @@ help:
 build:
 	npm run build
 
+.PHONY: deploy
+## deploy: deploy to GitHub
+deploy: build
+	npm run deploy
+
 .PHONY: run
 ## run: start app
 run:
 	npm start
+
+.PHONY: update
+## update: install packages
+update:
+	npm install gh-pages --save-dev
+	npm install
